@@ -88,7 +88,7 @@ else:("vale numbrid")
 #ül4
 
 try:
-    alghind=float("siseta hinna")
+    alghind=float("sisesta hind")
     if alghind>700:
         soodus=alghind*0.7
         print(f"soodus on {soodus}")
@@ -99,4 +99,49 @@ except:
 
 #ül5
 
+temp = float(input("Mis on toatemperatuur? : "))
 
+if temp > 18:
+    print(f" {temp} on üle 18 kraadi, kõik on korras!")
+else:
+    print(f" {temp} on madalam kui 18 kraadi.")
+
+#ül6
+
+kasv = float(input("Mis on sinu kasv? "))
+if kasv<=160:
+    print("lühike kasv")
+elif kasv<180:
+    print("keskmine kasv")
+elif kasv>180:
+    print("kõrg kasv")
+
+#ül7
+
+
+sugu = str(input("Mis on sinu sugu? M/N "))
+if sugu.upper()=="M":
+    print("Tere mees")
+elif sugu.upper()=="N":
+    print("Tere naine")
+
+kasv= float(input("Mis on sinu kasv? "))
+if kasv<=160:
+    print("lühike kasv")
+elif kasv<180:
+    print("keskmine kasv")
+elif kasv>180:
+    print("kõrg kasv")
+
+
+#ül12
+
+hind = float(input("sisesta hind: "))
+if hind>=10:
+    hind=hind-(hind * 0.1)
+    print(f"soodus on 10% ja hind on {hind}")
+elif hind<=10:
+     hind = hind-(hind*0.2)
+     print(f"soodus on 20% ja hind on {hind}")
+else:
+    print("soodustusi pole")
